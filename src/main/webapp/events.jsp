@@ -12,11 +12,22 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-<form action="/" method="get">
-    <div class="text-right">
-        <button id="eButton" type="submit" class="btn btn-secondary" >Home Page</button>
-    </div>
-</form>
+<div class="container-fluid">
+    <form action="/" method="get">
+        <div class="text-right">
+            <button id="eButton" type="submit" class="btn btn-secondary" >Home Page</button>
+        </div>
+    </form>
+
+    <form action="/events" method="get">
+        <div class="text-right">
+            <button id="rButton" type="submit" class="btn btn-secondary" >Refresh Events</button>
+        </div>
+    </form>
+</div>
+
+
+<a href="https://www.google.com/accounts/Logout?continue=https://appengine.google.com/_ah/logout?continue=http://localhost:8080/">logout</a>
 
 <h1 style="margin: 100px; alignment: center">Agenda List page</h1>
 <div class="container">
@@ -71,6 +82,19 @@
         text-align: center;
         font-family: "Baloo Da", sans-serif;
         background-color: #00BCD4 ;
+    }
+    #rButton{
+        margin: 2px 30px 2px 30px;
+        border-radius: 40px;
+        color: white;
+        padding: 15px 46px 15px 46px!important;
+        font-size: 20px;
+        text-align: center;
+        font-family: "Baloo Da", sans-serif;
+        background-color: #01BCD4 ;
+    }
+    a{
+       margin: 10px;
     }
 
 </style>
